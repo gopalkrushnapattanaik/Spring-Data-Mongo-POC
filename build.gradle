@@ -14,7 +14,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 bootJar {
-    baseName = 'gs-accessing-data-mongodb'
+    baseName = 'spring-data-mongodb-poc'
     version =  '0.1.0'
 }
 
@@ -27,5 +27,6 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile("org.springframework.boot:spring-boot-starter-web")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
